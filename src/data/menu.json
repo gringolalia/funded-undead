@@ -1,0 +1,59 @@
+{
+  "parent-nav": [
+    {
+      "category": "Home",
+      "link": "index"
+    },
+    {
+      "category": "Reveal",
+      "link": "Reveal"
+    },
+    {
+      "category": "Slider",
+      "link": "Slider"
+    },
+    {
+      "category": "Tooltip",
+      "link": "Tooltip"
+    },
+    {
+      "category": "Menus",
+      "link": "",
+      "sub": true
+    },
+    {
+      "category": "Magellan",
+      "link": "Magellan"
+    },
+    {
+      "category": "Accordion",
+      "link": "Accordion"
+    },
+    {
+      "category": "Dropdown",
+      "link": "Dropdown"
+    },
+    {
+      "category": "Tabs",
+      "link": "Tabs"
+    },
+    {
+      "category": "Orbit",
+      "link": "Orbit"
+    }
+  ],
+  "sub-nav": [
+    {
+      "category": "Dropdown Menu",
+      "link": "DropdownMenu"
+    },
+    {
+      "category": "Drilldown Menu",
+      "link": "DrilldownMenu"
+    },
+    {
+      "category": "Accordion Menu",
+      "link": "AccordionMenu"
+    }
+  ]
+}

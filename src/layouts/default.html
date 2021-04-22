@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js"
+  lang="ja">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible"
+      content="ie=edge" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>{{#unlesspage 'index'}}{{title}} |{{/unlesspage}} Foundation with Vue</title>
+    <meta name="description"
+      content="{{ description }}">
+    <link rel="stylesheet"
+      href="{{root}}assets/css/app.css" />
+    <link rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{root}}assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{root}}assets/img/favicon/favicon-32x32.png">
+    <link rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{root}}assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest"
+      href="{{root}}assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon"
+      href="{{root}}assets/img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5">
+    <link rel="shortcut icon"
+      href="{{root}}assets/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor"
+      content="#2d89ef">
+    <meta name="msapplication-config"
+      content="{{root}}assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color"
+      content="#ffffff">
+    <meta property="og:type"
+      content="website">
+    <meta property="og:site_name"
+      content="Foundation with Vue">
+    <meta property="og:title"
+      content="Foundation with Vue">
+    <meta property="og:description"
+      content="Foundation with Vue demo site">
+    <meta property="og:url"
+      content="URL">
+    <meta property="og:image"
+      content="image url">
+    <meta property="twitter:card"
+      content="summary_large_image">
+    <script defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body class="{{page}} {{layout}}">
+    <div class="off-canvas-wrapper">
+      <nav id="skip-links"
+        class="skip-links"
+        aria-label="Skip links"
+        data-smooth-scroll>
+        <a class="screen-reader-text"
+          href="#main">Skip to content</a>
+        <a class="screen-reader-text"
+          href="#menu-desktop">Skip to navigation</a>
+      </nav>
+      {{> off-canvi}}
+      <div class="off-canvas-content"
+        data-off-canvas-content>
+        <div class="grid-container full"
+          data-sticky-container>
+          {{> navi}}
+        </div>
+        <div class="main-container">
+          <div class="main-grid">
+            <main id="main"
+              class="main-content-full-width">
+              {{> body}}
+            </main>
+          </div>
+          <div id="top"></div>
+          <div id="content-top"></div>
+        </div>
+      </div>
+    </div>
+    {{> footer}}
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+
+</html>

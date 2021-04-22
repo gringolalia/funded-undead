@@ -1,0 +1,52 @@
+---
+title: home
+description: Foundaiton - Vue sample top page.
+---
+
+<div class="container">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell">
+        <h1 id="h1">Welcome to Foundation with Vue</h1>
+      </div>
+      <div class="cell">
+        <my-custom-element></my-custom-element>
+      </div>
+      <div class="cell anime">
+        <img class="yeti" src="{{root}}assets/img/svg/foundation.svg" />
+        {{> anime}}
+      </div>
+      <div class="cell">
+        <div class="links">
+          <a
+            href="https://jp.vuejs.org/"
+            rel="noopener noreferrer"
+            class="hollow button radius"
+          >
+            <i class="fab fa-vuejs"></i>
+            Vue Document (jp)
+          </a>
+          <a
+            href="https://get.foundation/sites/docs/"
+            rel="noopener noreferrer"
+            class="hollow button secondary radius"
+          >
+            <i class="fas fa-file-code"></i>
+            Foundation Document
+          </a>
+          <a
+            href="https://github.com/annrie/Foundation-Vue"
+            rel="noopener noreferrer"
+            class="hollow button success radius"
+          >
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="cell">
+        <window-size-element></window-size-element>
+      </div>
+    </div>
+  </div>
+</div>

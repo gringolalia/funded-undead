@@ -1,0 +1,44 @@
+---
+title: Slider
+description: Slider sample page.
+---
+
+<div class="grid-container">
+  <div class="grid-y grid-margin-y">
+    <div class="cell shrink">
+      <h1>Slider</h1>
+    </div>
+    <div class="cell small-6">
+      <h2>Foundation way</h2>
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-10">
+          <div class="slider"
+            data-slider
+            data-initial-start="50"
+            data-end="100"
+            data-step="10"
+            data-position-value-function="log"
+            data-non-linear-base="5">
+            <span
+              class="slider-handle"
+              data-slider-handle
+              role="slider"
+              tabindex="1"
+              aria-controls="sliderOutput"
+            ></span>
+            <!-- <span class="slider-fill" data-slider-fill></span> -->
+          </div>
+        </div>
+        <div class="cell small-2">
+      <input id="sliderOutput"
+        v-model="dataValue"
+        type="number" />
+        </div>
+      </div>
+    </div>
+    <div class="cell small-6">
+      <h2>Vue way</h2>
+      <vue-method-slider></vue-method-slider>
+    </div>
+  </div>
+</div>

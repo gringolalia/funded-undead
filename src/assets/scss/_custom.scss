@@ -1,0 +1,149 @@
+// see <https://css-tricks.com/couple-takes-sticky-footer/#there-is-flexbox>
+// flex box
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  color: $black;
+}
+.off-canvas-wrapper {
+  flex: 1 0 auto;
+}
+.back-to-top-sticky {
+  flex-shrink: 0;
+}
+
+//// grid
+// html {
+//   height: 100%;
+// }
+// body {
+//   // @include font-family(serif);
+//   min-height: 100%;
+//   display: grid;
+//   grid-template-rows: 1fr auto;
+//   overflow-x: hidden;
+//   color: $black;
+// }
+// .back-to-top-sticky {
+//   grid-row-start: 2;
+//   grid-row-end: 3;
+// }
+.container {
+  text-align: center;
+}
+.index {
+  main {
+    margin-top: 1em;
+  }
+  .links {
+    margin-top: 15px;
+  }
+  .only-top {
+    display: block;
+  }
+  .anime {
+    position: relative;
+    .yeti {
+      @include mui-animation(fade, zoom);
+
+      animation-duration: 5s;
+    }
+  }
+}
+.normal {
+  main {
+    height: auto;
+  }
+}
+h1 {
+  font-size: $h1-font-size;
+  color: $black;
+}
+.VuedationLogo {
+  animation: 1s appear;
+  img {
+    width: 40%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.Magellan {
+  main {
+    .is-active {
+      color: $white;
+      background-color: $primary-color;
+    }
+    .only-top {
+      display: none;
+    }
+    .sections {
+      @include breakpoint(small) {
+        margin-bottom: 50px;
+      }
+      @include breakpoint(medium) {
+        margin-bottom: 300px;
+      }
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+        margin: 1rem;
+        text-indent: 1rem;
+        background: $light-gray;
+        span {
+          font-size: 2rem;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}
+#dropdown-menu {
+  .is-dropdown-submenu-parent.opens-right {
+    &.is-active {
+      a {
+        color: $white;
+        background-color: rgba ($primary-color, 0.7);
+        &:hover {
+          color: $white;
+          background-color: $vapor;
+        }
+      }
+      .is-dropdown-submenu {
+        & > .is-submenu-item {
+          background-color: rgba ($primary-color, 0.9);
+        }
+        &.js-dropdown-active {
+          a {
+            color: $white;
+            background-color: $white-smoke;
+            &:hover {
+              color: get-color(primary);
+              background-color: lighten($primary-color, 40%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.Reveal .close-button {
+  z-index: 20;
+  color: $black;
+  &:hover {
+    color: scale-color($primary-color, $lightness: -20%);
+  }
+}

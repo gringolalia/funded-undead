@@ -1,0 +1,48 @@
+---
+title: Magellan
+description: Magellan sample page.
+---
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell small-12 medium-3">
+      <div
+        class="sticky hide-for-small-only"
+        data-sticky
+        data-anchor="main"
+        data-options="marginTop:7;"
+        id="magellan-menu"
+      >
+        <div class="grid-x">
+          <div class="cell">
+            <h1>Magellan</h1>
+          </div>
+          <div class="cell">
+            <ul class="vertical menu" data-magellan>
+              <li><a href="#first">First Section</a></li>
+              <li><a href="#second">Second Section</a></li>
+              <li><a href="#third">Third Section</a></li>
+            </ul>
+          </div>
+          <div class="cell">
+            <window-size-element></window-size-element>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cell small-12 medium-9">
+      <h1 class="show-for-small-only">Magellan</h1>
+      <div class="sections">
+        <section id="first" data-magellan-target="first">
+          <span>First Section</span>
+        </section>
+        <section id="second" data-magellan-target="second">
+          <span>Second Section</span>
+        </section>
+        <section id="third" data-magellan-target="third">
+          <span>Third Section</span>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

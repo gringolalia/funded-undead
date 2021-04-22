@@ -1,0 +1,199 @@
+/* common */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes turn1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes turn1-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-1turn);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-top {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slide-bottom {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes width0-100per {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes height0-100per {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes scale0-1 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* common end */
+
+// @keyframes chapter-1__show-effects-3 {
+//   from { transform: rotate(-90deg); }
+//   to { transform: rotate(0deg); }
+// }
+
+// @keyframes chapter-1__hidden-effects-3 {
+//   from { transform: rotate(0deg); }
+//   to { transform: rotate(90deg); }
+// }
+
+// @keyframes chapter-2__show-view-1 {
+//   from { transform: translateY(calc(100% + 25.5vw)); }
+//   to { transform: translateY(0); }
+// }
+
+// @keyframes chapter-2__show-view-2 {
+//   from { transform: translateY(100vh); }
+//   to { transform: translateY(0); }
+// }
+
+// @keyframes chapter-2__sway-view-2 {
+//   0% { transform: rotate(0deg); }
+//   30% { transform: rotate(-15deg); }
+//   70% { transform: rotate(15deg); }
+//   100% { transform: rotate(0deg); }
+// }
+
+// @keyframes chapter-3__show-kako {
+//   from { opacity: 0; transform: translateY(-70vh) rotateY(0) rotateX(0); }
+//   to { opacity: 0.7; transform: translateY(0) rotateY(360deg) rotateX(360deg); }
+// }
+
+// @keyframes chapter-3__hidden-kako {
+//   from { opacity: 0.7; transform: translateY(0) rotateY(0) rotateX(0); }
+//   to { opacity: 0; transform: translateY(70vh) rotateY(360deg) rotateX(360deg); }
+// }
+
+// @keyframes chapter-3__show-mirai-1 {
+//   from { opacity: 0; transform: translateX(-70vw) rotateX(0) rotateY(0); }
+//   to { opacity: 0.7; transform: translateX(0) rotateX(360deg) rotateY(360deg); }
+// }
+
+// @keyframes chapter-3__hidden-mirai-1 {
+//   from { opacity: 0.7; transform: translateX(0) rotateX(0) rotateY(0); }
+//   to { opacity: 0; transform: translateX(70vw) rotateX(360deg) rotateY(360deg); }
+// }
+
+// @keyframes chapter-3__show-mirai-2 {
+//   from { opacity: 0; transform: translateX(70vw) rotateX(0) rotateY(0); }
+//   to { opacity: 0.7; transform: translateX(0) rotateX(360deg) rotateY(360deg); }
+// }
+
+// @keyframes chapter-3__hidden-mirai-2 {
+//   from { opacity: 0.7; transform: translateX(0) rotateX(0) rotateY(0); }
+//   to { opacity: 0; transform: translateX(-70vw) rotateX(360deg) rotateY(360deg); }
+// }
+
+@keyframes chapter-3__show-saikai {
+  from {
+    opacity: 0;
+    transform: scale(10) rotateX(0) rotateY(0);
+  }
+  to {
+    opacity: 0.7;
+    transform: scale(1) rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes chapter-3__hidden-saikai {
+  from {
+    opacity: 0.7;
+    transform: scale(1) rotateX(360deg) rotateY(360deg);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+@keyframes chapter-3__change-color-1 {
+  from {
+    background-color: #4dadad;
+  }
+  to {
+    background-color: #e1c96a;
+  }
+}
+
+@keyframes chapter-3__change-color-2 {
+  from {
+    background-color: #e1c96a;
+  }
+  to {
+    background-color: #fff;
+  }
+}
